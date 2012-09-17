@@ -209,7 +209,7 @@
 (defun helm-prelude ()
   "Preconfigured `helm'."
   (interactive)
-  (if (projectile-get-project-root)
+  (if (projectile-project-root)
       ;; add project files and buffers when in project
       (helm-other-buffer '(helm-c-source-projectile-files-list
                            helm-c-source-projectile-buffers-list
